@@ -1,0 +1,38 @@
+{
+    
+    "type":"local",
+    "n": 1, 
+    "N_containers": 1,
+
+    "units": "SI",
+    "analysis_params": ["r"],
+    "bound":0.01,
+
+    "constants":
+    {
+        "rho": 1050.0,
+        "mu" : 0.0035
+    },
+
+
+    "steady_state_boundaries": 
+    {
+        "Pin":80.0, 
+        "Pout":0.0
+    },
+    
+    
+    "transient_boundary_params":
+    {
+        "A":0.2, 
+        "B":3.0,  
+        "D":1.5
+    },
+    
+    "transient_init_cond":"zeros",
+    "t0": 0.0, 
+    "tstep":0.001, 
+    "kmax":100, 
+    "conv_th":0.001
+
+}

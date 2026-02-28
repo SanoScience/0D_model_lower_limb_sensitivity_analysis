@@ -100,10 +100,11 @@ class Orthogonality:
 # =======================
 if __name__=="__main__":
     title = "pulse pressure (t) global"
-    path = f"C:/Users/MagdalenaOtta/Documents/0D_SA_for_publication_FV/data/pulse_pressure_S1_transient_data_ordered.txt"
+    path = f"./data/pulse_pressure_S1_transient_data_ordered.txt"
     
-    plotpath = f"C:/Users/MagdalenaOtta/Documents/0D_SA_for_publication_FV/data/orthoplots"
+    plotpath = f"./data/orthoplots"
     os.makedirs(plotpath, exist_ok=True)
     
     obj = Orthogonality(path, title, plotpath)
+
 

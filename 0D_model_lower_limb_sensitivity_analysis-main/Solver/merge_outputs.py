@@ -55,8 +55,9 @@ if __name__ == "__main__":
     path_to_outputs = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Solver/outputs"
 
     # Path to where merged patches should go
-    path_to_merged_output = "C:/Users/MagdalenaOtta/Documents/0D_SA_for_publication_FV/Solver/merged_outputs"
+    path_to_merged_output = "./Solver/merged_outputs"
     # os.makedirs(path_to_merged_output, exist_ok=True)
     
 
     merge(path_to_outputs, path_to_merged_output)
+

@@ -71,7 +71,7 @@ def run(metric_name, n_outputs, bootstrap, path_to_output, path_to_indices):
 # =========================================
 if __name__ == "__main__":
 
-    path_to_problem = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/problem.json"
+    path_to_problem = "./Sampling/problem.json"
 
     
     with open(path_to_problem) as fr:
@@ -83,11 +83,12 @@ if __name__ == "__main__":
     N_outputs = 36 # for pressure metrics 36, for flow metrics 50
     bootstrap = 100
     
-    path_to_output = f"C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Solver/merged_outputs/merged_output_{metric_name}.csv"
+    path_to_output = f"./Solver/merged_outputs/merged_output_{metric_name}.csv"
     
     
-    path_to_indices =f"C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sensitivity_analysis/indices"
+    path_to_indices =f"./Sensitivity_analysis/indices"
     os.makedirs(path_to_indices, exist_ok=True)
        
     
+
     run(metric_name, N_outputs, bootstrap, path_to_output, path_to_indices)

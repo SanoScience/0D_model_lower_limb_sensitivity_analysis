@@ -57,14 +57,14 @@ class LocalSA:
 # =====================================================
 if __name__ == "__main__":
     
-    path_to_problem = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/problem.json"
-    path_to_deltas = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/input_samples/base_deltas_local.txt"
+    path_to_problem = "./Sampling/problem.json"
+    path_to_deltas = "./Sampling/input_samples/base_deltas_local.txt"
     
     # Path to the solver output for the output of choice
     metric_name = "mean_pressure" # "pulse_pressure", "mean_flow", "pulse_flow"
-    path_to_outputs = f"C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Solver/outputs/patch_0_{metric_name}.csv"
+    path_to_outputs = f"./Solver/outputs/patch_0_{metric_name}.csv"
     
-    path_to_save_SA_indices = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sensitivity_analysis/local_indices_unordered"
+    path_to_save_SA_indices = "./Sensitivity_analysis/local_indices_unordered"
     os.makedirs(path_to_save_SA_indices, exist_ok=True)
     
     

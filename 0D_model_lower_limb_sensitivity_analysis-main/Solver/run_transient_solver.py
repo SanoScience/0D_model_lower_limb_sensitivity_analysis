@@ -210,11 +210,11 @@ class ExecuteSamples:
 # ===================================================
 if __name__ == "__main__":
     
-    path_to_input_data = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/input_data/" 
-    path_to_problem = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/problem.json"
+    path_to_input_data = "./input_data/" 
+    path_to_problem = "./Sampling/problem.json"
     
-    path_to_SA_input_samples ="C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/input_samples"
-    path_to_save_code_outputs = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Solver/outputs"
+    path_to_SA_input_samples ="./Sampling/input_samples"
+    path_to_save_code_outputs = "./Solver/outputs"
     
     # ------------------------
     # Read in setup file

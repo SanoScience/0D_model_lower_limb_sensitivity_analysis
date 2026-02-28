@@ -242,11 +242,11 @@ class GenerateSamples:
 
 
 if __name__ ==  "__main__" :    
-    path_to_setup_file = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/input_data/setup.json"
+    path_to_setup_file = "./input_data/setup.json"
     
-    path_to_save_code_outputs = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/Sampling/"
+    path_to_save_code_outputs = "./Sampling/"
     
-    path_to_input_data = "C:/Users/MagdalenaOtta/Documents/0D_SA_publication_FV/input_data/"
+    path_to_input_data = "./input_data/"
     
     
     
@@ -267,4 +267,5 @@ if __name__ ==  "__main__" :
 
     objMain.set_analysis_vector()         # call function extracting relevant parameters from data
     objMain.pre_process_analysis()        # pre-proces sens. analysis
+
     objMain.generate_parameters()         # generate input samples for SA
